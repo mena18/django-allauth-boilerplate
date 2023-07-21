@@ -4,7 +4,7 @@
   <head>
     <title>
       {% block title %}
-      {% endblock %}
+      {% endblock title %}
     </title>
     <link href="{% static "css/base.css" %}" rel="stylesheet">
   </head>
@@ -45,7 +45,7 @@
     {% endif %}
     <div id="content">
       {% block content %}
-      {% endblock %}
+      {% endblock content %}
     </div>
   </body>
 </html>
