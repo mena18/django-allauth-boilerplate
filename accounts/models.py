@@ -42,7 +42,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_superuser = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     last_login = models.DateTimeField(auto_now=True)
-    image = models.ImageField(blank=True, null=True)
+    photo = models.ImageField(blank=True, null=True)
+    date_of_birth = models.DateField(blank=True, null=True)
 
     USERNAME_FIELD = "username"
     REQUIRED_FIELDS = ["email"]
