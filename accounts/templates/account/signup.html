@@ -1,13 +1,17 @@
-{% extends "account/base.html" %}
+{% extends "base.html" %}
 
-{% load i18n %}
 {% load static %}
 
 {% block title %}
-  Log-in
-{% endblock title %}
+  Create an account
+{% endblock %}
 
 {% block content %}
+  <h1>
+    Create an account
+  </h1>
+ 
+
   <div class="socialaccount_ballot">
 
     <div class="socialaccount_providers">
@@ -30,23 +34,17 @@
     </div>
 
   </div>
- 
-  <h1>
-    Log-in
-  </h1>
+
   <p>
-    Please, use the following form to log-in:
+    Please, sign up using the following form:
   </p>
   <form method="post">
     {{ form.as_p }}
     {% csrf_token %}
     <p>
-      <input type="submit" value="Log in">
+      <input type="submit" value="Create my account">
     </p>
   </form>
-  New here ?
-  <a href="{% url 'account_signup' %}">sign up</a>
-  <p>
-    <a href="{% url 'account_reset_password' %}">Forget Password</a>
-  </p>
-{% endblock content %}
+  already have an account ?
+  <a href="{% url 'account_login' %}">login </a>
+{% endblock %}
