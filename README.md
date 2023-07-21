@@ -16,7 +16,7 @@ the boilerplate includes
 
 
 if you are using vscode create .vscode directory and add settings.json file 
-""" json
+``` json
 {
   "files.watcherExclude": {
     "**/env/**": true,
@@ -49,4 +49,4 @@ if you are using vscode create .vscode directory and add settings.json file
   "python.testing.unittestEnabled": false,
   "python.testing.pytestEnabled": true
 }
-"""
+```
